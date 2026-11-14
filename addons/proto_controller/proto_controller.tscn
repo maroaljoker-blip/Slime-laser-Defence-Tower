@@ -15,15 +15,20 @@ height = 1.8
 
 [node name="ProtoController" type="CharacterBody3D" unique_id=2082142444]
 script = ExtResource("1_ucva2")
+can_sprint = true
+can_freefly = true
 input_left = "move_left"
 input_right = "move_right"
 input_forward = "move_up"
 input_back = "move_down"
 input_jump = "jump"
+input_sprint = "run"
+input_freefly = "fly"
 
 [node name="Mesh" type="MeshInstance3D" parent="." unique_id=1949300834]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0060675144, 0.8020008, 0.057691097)
 material_override = SubResource("StandardMaterial3D_iof21")
+transparency = 1.0
 cast_shadow = 0
 mesh = SubResource("CapsuleMesh_ucva2")
 
@@ -35,3 +40,4 @@ shape = SubResource("CapsuleShape3D_iof21")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=340434263]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.044328332)

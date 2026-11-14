@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bx5ixgs3qhao"]
+
+[ext_resource type="PackedScene" uid="uid://biqvh1r8c26o6" path="res://assets/import_examples/chest_gold/chest_gold.glb" id="1_xqq46"]
+
+[node name="chest_gold2" unique_id=1161155416 instance=ExtResource("1_xqq46")]
